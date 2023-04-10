@@ -1,0 +1,33 @@
+@mixin bg-img($bg: "") {
+    background-image: url($bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin sm {
+    @media (max-width: 640px) {
+        @content;
+    }
+}
+@mixin md {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin ct-breakpoint() {
+    @media (max-width: 1444px) {
+        @content;
+    }
+}

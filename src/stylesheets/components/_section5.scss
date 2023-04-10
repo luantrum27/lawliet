@@ -1,0 +1,71 @@
+@use "../abstracts/" as *;
+.section5 {
+    .section5__container {
+        padding-top: 32px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 22px;
+        @include md() {
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .section5__content--right {
+            max-width: 330px;
+            img {
+                border-bottom-left-radius: 50px;
+            }
+        }
+
+        .section5--heading {
+            font-family: "Playfair Display";
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+            letter-spacing: 0.5px;
+            color: #2d2f30;
+            @include sm() {
+                font-size: 36px;
+            }
+            @include md() {
+                text-align: center;
+            }
+        }
+        .section5--text {
+            font-family: "Poppins";
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 0.5px;
+            color: #4f4f4f;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            max-width: 820px;
+            @include md() {
+                text-align: center;
+            }
+            @include sm() {
+                font-size: 18px;
+            }
+        }
+        .btn--call {
+            width: 219px;
+            height: 64px;
+            background: #094b72;
+            border-radius: 8px;
+            font-family: "Poppins";
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 36px;
+            letter-spacing: 0.5px;
+            color: #f9f8f9;
+            @include center();
+            gap: 17.33px;
+            @include md() {
+                margin: 0 auto;
+            }
+        }
+    }
+}

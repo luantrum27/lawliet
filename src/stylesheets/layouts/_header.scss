@@ -1,0 +1,72 @@
+@use "../abstracts/" as *;
+.navbar {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    .nav__logo--circle {
+        width: 36px;
+        height: 36px;
+        border-radius: 100rem;
+        background-color: #094b72;
+        @include center();
+        p {
+            color: white;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 12px;
+        }
+    }
+    .nav__logo--text {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 1.5px;
+        color: #2d2f30;
+    }
+}
+
+.nav__function {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 146px;
+    .nav__categories {
+        display: flex;
+        align-items: center;
+        gap: 56px;
+        @include md() {
+            display: none;
+        }
+        .nav__category {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 23px;
+            letter-spacing: 1.5px;
+            color: #2d2f30;
+        }
+    }
+    .nav__icon--bars {
+        display: none;
+        @include md() {
+            display: block;
+        }
+    }
+    .nav__icon--search {
+        display: block;
+        @include md() {
+            display: none;
+        }
+    }
+}

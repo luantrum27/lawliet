@@ -1,0 +1,102 @@
+@use "../abstracts/" as *;
+.section4 {
+    background: #f2f7ff;
+    .section4__container {
+        padding-top: 60px;
+        padding-bottom: 90px;
+        .section4--heading {
+            font-family: "Playfair Display";
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: #2d2f30;
+            @include sm() {
+                font-size: 36px;
+            }
+        }
+        .testimonials {
+            margin-top: 50px;
+            @include center();
+            gap: 30;
+            @include lg() {
+                flex-direction: column;
+                gap: 50px;
+            }
+            .testimonial {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 17px;
+                .testimonial__content {
+                    max-width: 540px;
+                    padding: 32px;
+                    background: #fff;
+                    border-radius: 10px;
+                    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        bottom: -14px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        border-left: 15px solid transparent;
+                        border-right: 15px solid transparent;
+                        border-top: 15px solid #fff;
+                    }
+                    .testimonial__content--title {
+                        font-family: "Poppins";
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 28px;
+                        text-align: center;
+                        color: #151617;
+                    }
+                    .testimonial__content--text {
+                        max-width: 476px;
+                        min-height: 120px;
+                        font-family: "Poppins";
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        text-align: center;
+                        letter-spacing: 0.5px;
+                        color: #4f4f4f;
+                        margin-top: 8px;
+                    }
+                }
+                .testimonial__information {
+                    display: flex;
+                    align-items: center;
+                    gap: 28;
+                    .information__avatar {
+                        width: 56px;
+                        height: 56px;
+                        border-radius: 100rem;
+                    }
+                    .information__content {
+                        font-family: "Inter";
+
+                        .information-content--name {
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 28px;
+                            color: #151617;
+                        }
+                        .information-content--job {
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 24px;
+                            color: #4f4f4f;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

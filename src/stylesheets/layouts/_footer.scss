@@ -1,0 +1,114 @@
+@use "../abstracts/" as *;
+.footer {
+    background-color: #094b72;
+    .footer__content {
+        .footer__content--main {
+            padding-top: 73px;
+            padding-bottom: 92px;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            @include md() {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+        }
+    }
+    .footer__logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .footer__logo--circle {
+            width: 54px;
+            height: 54px;
+            border-radius: 100rem;
+            background-color: white;
+            @include center();
+            p {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 12px;
+                color: #0f6e8c;
+            }
+        }
+        .footer__logo--text {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 23px;
+            letter-spacing: 1.5px;
+            color: #fff;
+        }
+    }
+    .footer__information {
+        display: flex;
+        align-items: start;
+        justify-content: space-around;
+        gap: 30px;
+        @include sm() {
+            flex-direction: column;
+        }
+    }
+    .footer__categories {
+        width: 160px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        @include sm() {
+            align-items: center;
+        }
+        .footer__category {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #eeeff4;
+        }
+        .footer__category--header {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #f4f5f7;
+            margin-bottom: 20px;
+        }
+    }
+    .footer__bottom {
+        background: #004d7b;
+        .footer__bottom--flex {
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include sm() {
+                padding: 10px 0px;
+                flex-direction: column;
+                gap: 5px;
+            }
+            .footer__bottom--copyright {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: #d9dbe1;
+            }
+            .footer__media {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+            .footer__media--item {
+                width: 24px;
+                height: 24px;
+                @include center();
+                border-radius: 100rem;
+                background-color: #195e88;
+            }
+        }
+    }
+}

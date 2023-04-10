@@ -1,0 +1,21 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all linear;
+    color: white;
+}
+.btn:hover {
+    opacity: 0.9;
+    transition: all linear;
+}
+
+.relative {
+    position: relative;
+}
