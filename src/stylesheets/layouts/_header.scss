@@ -92,6 +92,9 @@
     background: #f0f5fd;
     z-index: 1000;
     transition: all 0.5s ease-in-out;
+    @include sm() {
+        width: 100%;
+    }
 
     .navbar-mobile__categories {
         display: flex;
@@ -105,6 +108,9 @@
         color: #2d2f30;
         gap: 30px;
         justify-content: center;
+        @include sm() {
+            margin-top: 50px;
+        }
     }
 }
 .navbar-mobile--close {
