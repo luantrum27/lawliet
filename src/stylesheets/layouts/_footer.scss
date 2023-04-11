@@ -50,7 +50,7 @@
         justify-content: space-around;
         gap: 30px;
         @include sm() {
-            flex-direction: column;
+            flex-wrap: wrap;
         }
     }
     .footer__categories {
