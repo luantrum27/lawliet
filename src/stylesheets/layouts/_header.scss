@@ -174,11 +174,14 @@
     background: #f0f5fd;
     transition: all 0.1s ease-in-out;
 }
-
-#show-navbar:checked ~ .overlay,
-#show-modal:checked ~ .overlay {
+#show-modal:checked ~ #navbar-modal__overlay {
     display: block;
 }
+
+#show-navbar:checked ~ #navbar-mobile__overlay {
+    display: block;
+}
+
 #show-navbar:checked ~ .navbar-mobile {
     right: 0;
     transition: all 0.1s ease-in-out;
