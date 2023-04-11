@@ -91,7 +91,7 @@
     width: 400px;
     background: #f0f5fd;
     z-index: 1000;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.1s ease-in-out;
     @include sm() {
         width: 100%;
     }
@@ -172,6 +172,7 @@
     border-radius: 8px;
     z-index: 1000;
     background: #f0f5fd;
+    transition: all 0.1s ease-in-out;
 }
 
 #show-navbar:checked ~ .overlay,
@@ -180,8 +181,9 @@
 }
 #show-navbar:checked ~ .navbar-mobile {
     right: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 #show-modal:checked ~ .navbar__modal {
     top: 30px;
+    transition: all 0.1s ease-in-out;
 }
